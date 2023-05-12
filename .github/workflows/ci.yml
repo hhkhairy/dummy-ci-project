@@ -35,10 +35,11 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install
-        source .venv/bin/activate
     - name: Lint with ruff
       run: |
+        source .venv/bin/activate
         ruff .
     - name: Test with pytest
       run: |
+        source .venv/bin/activate
         pytest
